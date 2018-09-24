@@ -1,0 +1,47 @@
+
+header{
+    background-color: rgb(117, 238, 238);
+    color: rgb(14, 96, 151);
+    text-align: center;
+    padding: 10px;
+}
+.direction ol{
+    border: 1px solid black;
+    font-family: cursive;
+    background-color: beige;
+}
+
+#targetNum{
+    background-color: lightgreen;
+    padding: 30px;
+    margin-left: 15px;
+}
+#scoreBoard{
+    background-color: aqua;
+    margin-left: 10px;
+    padding: 10px;
+}
+#totalScore{
+    background-color: darkcyan;
+    padding: 10px;
+    margin-left: 15px;
+
+}
+#totalScoreBoard{
+    background-color: darkcyan;
+    padding: 77px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.crystal-images{
+    display: inline;
+}
+.footer {
+	
+	bottom: 0;
+	width: 100%;
+    background-color: black;
+	text-align: center;
+	padding: 10px;
+}
