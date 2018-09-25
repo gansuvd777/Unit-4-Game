@@ -20,14 +20,14 @@
     <div class="container">
         <div class="direction">
             <h3>Here is how you play the game!</h3>
-            <ol>
+            <ol class="unstyled">
                 <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
                 <li>There are four different types of crystal animal below.</li>
                 <ul>
-                    <li id="green">Green Froggy</li>
-                    <li id="red">Red Wolf</li>
-                    <li id="white">White Bunny</li>
-                    <li id="purple">Purple Unicorn</li>
+                    <li>Green Froggy</li>
+                    <li>Red Wolf</li>
+                    <li>White Bunny</li>
+                    <li>Purple Unicorn</li>
                 </ul>
                 <li>By clicking on a crystal animal, you will add a specific amount of points to your total score.</li>
                 <li>You win the game by matching your total score to the random number.</li>
@@ -38,24 +38,31 @@
         </div>
 
         <div class="row">
-            <div id="targetNum" class="col-xs-8">Target Number</div>
+            <div id="targetNum" class="col-xs-8">Target Number
+                <h4 id="targetScore"></h4>
+            </div>
+                
             <div id="scoreBoard" class="col-xs-4">Score Board
-                <div id="wins">Wins:</div>
-                <div id="losses">Losses:</div>
+                <div id="wins">Wins: <span id="winCount"></span></div>
+                <div id="losses">Losses: <span id="lossCount"></span></div>
             </div>
         </div>
-        <div class="crystal-images">
-            <img src="./assets/images/greenFrog.jpeg" alt="Frog Image" height="200px">
-            <img src="./assets/images/redWolf.jpg" alt="Red Wolf" height="200px">
-            <img src="./assets/images/whiteRabbit.jpg" alt="White Bunny" height="200px">
-            <img src="./assets/images/purpleUnicorn.jpg" alt="Purple Unicorn" height="200px">
-
+        <div class="selection">Crystlals selection
+            <br>
+            <div class="crystal-images">
+                <img id="green" src="./assets/images/greenFrog.jpeg" alt="Frog Image" height="200px">
+                <img id="red" src="./assets/images/redWolf.jpg" alt="Red Wolf" height="200px">
+                <img id="white" src="./assets/images/whiteRabbit.jpg" alt="White Bunny" height="200px">
+                <img id="purple" src="./assets/images/purpleUnicorn.jpg" alt="Purple Unicorn" height="200px">
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-6" id="totalScore">Your total score is:</div>
+            <div class="col-md-6" id="totalScore">Your score is:
+            </div>
+            
         </div>
         <div class="row">
-            <div class="col-md-8" id="totalScoreBoard"></div>
+            <div class="col-md-8"><h4 id="yourScore"></h4></div>
         </div>
     </div>
 

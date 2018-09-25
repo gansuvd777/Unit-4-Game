@@ -6,6 +6,7 @@ header{
     padding: 10px;
 }
 .direction ol{
+    list-style: none;
     border: 1px solid black;
     font-family: cursive;
     background-color: beige;
@@ -27,7 +28,7 @@ header{
     margin-left: 15px;
 
 }
-#totalScoreBoard{
+#yourScore{
     background-color: darkcyan;
     padding: 77px;
     margin-top: 10px;
