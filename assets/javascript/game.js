@@ -23,6 +23,7 @@ var crystal = {
     }
 };
 
+
 // Current and Target Score
 var currentScore = 0;
 var targetScore = 0;
@@ -66,6 +67,7 @@ var addValues = function(crystal){
 var checkWin = function() {
     if (currentScore > targetScore) {
         alert("Oops. You Lost");
+        
         // console.log("You lost");
         lossCount++;
         // display on HTML
@@ -75,6 +77,7 @@ var checkWin = function() {
     }
     else if (currentScore === targetScore){
         alert("Congratulations! You Won!");
+        
 
         winCount++;
 

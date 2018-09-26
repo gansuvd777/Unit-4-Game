@@ -15,55 +15,58 @@
 
 <body>
     <header class="lead-header">
-        <h2>Crystal animals collector </h2>
+        <h4>Crystal animals collector </h4>
     </header>
     <div class="container">
         <div class="direction">
-            <h3>Here is how you play the game!</h3>
             <ol class="unstyled">
-                <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+                <li>You will be given a random number at the start of the game.<span><strong>"Target Number"</strong></span></li>
                 <li>There are four different types of crystal animal below.</li>
                 <ul>
-                    <li>Green Froggy</li>
-                    <li>Red Wolf</li>
-                    <li>White Bunny</li>
-                    <li>Purple Unicorn</li>
+                    <li style="color: green">Green Froggy
+                        <img src="./assets/images/greenFrog.jpeg" height="30px" alt="">
+                    </li>
+                    <li style="color: red">Red Wolf
+                        <img src="./assets/images/redWolf.jpg" height="30px" alt="">
+                    </li>
+                    <li>White Bunny
+                        <img src="./assets/images/whiteRabbit.jpg" height="30px" alt="">
+                    </li>
+                    <li style="color: purple">Purple Unicorn
+                        <img src="./assets/images/purpleUnicorn.jpg" height="30px" alt="">
+                    </li>
                 </ul>
                 <li>By clicking on a crystal animal, you will add a specific amount of points to your total score.</li>
                 <li>You win the game by matching your total score to the random number.</li>
                 <li>You lose the game if your total score goes above the random number.</li>
                 <li>The value of each crystal animal is hidden from you until you click on it.</li>
-                <li>Each time when the game starts, the game will change the values of each crystal animal.</li>
+                <li>Each time when the game starts, the game will change the values of each crystal animal. <strong>Good Luck!!!</strong></li>
             </ol>
         </div>
 
         <div class="row">
-            <div id="targetNum" class="col-xs-8">Target Number
+            <div id="targetNum" class="col-md-4">Target Number
                 <h4 id="targetScore"></h4>
             </div>
                 
-            <div id="scoreBoard" class="col-xs-4">Score Board
-                <div id="wins">Wins: <span id="winCount"></span></div>
-                <div id="losses">Losses: <span id="lossCount"></span></div>
+            <div id="scoreBoard" class="col-md-4" style="color: red">Score Board
+                <div id="wins" style="color: black">Wins: <span id="winCount"></span></div>
+                <div id="losses" style="color: black">Losses: <span id="lossCount"></span></div>
             </div>
-        </div>
-        <div class="selection">Crystlals selection
+            <div class="col-md-4" id="totalScore">Your score is: 
+                <h4 id="yourScore"></h4>
+            </div>
+        <div class="selection">
+            <h4>Crystlals selection 💎 💎 💎 💎 💎 💎 💎 💎 💎 💎 💎 </h4>
             <br>
             <div class="crystal-images">
-                <img id="green" src="./assets/images/greenFrog.jpeg" alt="Frog Image" height="200px">
-                <img id="red" src="./assets/images/redWolf.jpg" alt="Red Wolf" height="200px">
-                <img id="white" src="./assets/images/whiteRabbit.jpg" alt="White Bunny" height="200px">
-                <img id="purple" src="./assets/images/purpleUnicorn.jpg" alt="Purple Unicorn" height="200px">
+                <img id="green" style="border: 1px solid green " src="./assets/images/greenFrog.jpeg" alt="Frog Image" height="200px">
+                <img id="red" style="border: 1px solid red" src="./assets/images/redWolf.jpg" alt="Red Wolf" height="200px">
+                <img id="white" style="border: 1px solid black" src="./assets/images/whiteRabbit.jpg" alt="White Bunny" height="200px">
+                <img id="purple" style="border: 1px solid purple" src="./assets/images/purpleUnicorn.jpg" alt="Purple Unicorn" height="200px">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6" id="totalScore">Your score is:
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-md-8"><h4 id="yourScore"></h4></div>
-        </div>
+        
     </div>
 
     <br>

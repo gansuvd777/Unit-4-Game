@@ -1,45 +1,59 @@
 
 header{
-    background-color: rgb(117, 238, 238);
-    color: rgb(14, 96, 151);
+    background-color: black;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 .direction ol{
     list-style: none;
-    border: 1px solid black;
-    font-family: cursive;
-    background-color: beige;
+    border: 1px solid rgb(79, 161, 199);
+    border-radius: 15px;
+    font-family: 'Markazi Text', serif;
+    background-color: rgb(180, 226, 235);
+    padding: 10px;
 }
-
+ul li {
+    display: inline;
+    padding: 10px;
+}
+.row{
+    text-align: center;
+    padding: 10px;
+}
 #targetNum{
-    background-color: lightgreen;
-    padding: 30px;
-    margin-left: 15px;
+    border: 1px dotted rgb(79, 161, 199);
+    border-radius: 5px;
 }
 #scoreBoard{
-    background-color: aqua;
-    margin-left: 10px;
-    padding: 10px;
+    border: 1px dotted rgb(79, 161, 199);
+    border-radius: 5px;
+    font-weight: bold;
 }
 #totalScore{
-    background-color: darkcyan;
-    padding: 10px;
-    margin-left: 15px;
-
+    border: 1px dotted rgb(79, 161, 199);
+    border-radius: 5px;
 }
-#yourScore{
-    background-color: darkcyan;
-    padding: 77px;
-    margin-top: 10px;
-    margin-left: 15px;
-}
-
 .crystal-images{
     display: inline;
+    position: relative;
+    left: 20%;
+}
+.crystal-images img:hover{
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+
+.selection h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
 }
 .footer {
-	
 	bottom: 0;
 	width: 100%;
     background-color: black;
