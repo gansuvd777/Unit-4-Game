@@ -23,6 +23,7 @@ var crystal = {
     }
 };
 
+var $song = $('.song');
 
 // Current and Target Score
 var currentScore = 0;
@@ -31,7 +32,6 @@ var targetScore = 0;
 // Wins and losses
 var winCount = 0;
 var lossCount = 0;
-
 
 // functions
 // ==========================================
@@ -67,7 +67,6 @@ var addValues = function(crystal){
 var checkWin = function() {
     if (currentScore > targetScore) {
         alert("Oops. You Lost");
-        
         // console.log("You lost");
         lossCount++;
         // display on HTML
@@ -77,7 +76,6 @@ var checkWin = function() {
     }
     else if (currentScore === targetScore){
         alert("Congratulations! You Won!");
-        
 
         winCount++;
 
@@ -92,6 +90,7 @@ startGame();
 // ===========================================
 $("#green").click(function(){
     addValues(crystal.green);
+    $song.get(0).play();
 });
 $("#red").click(function(){
     addValues(crystal.red);
